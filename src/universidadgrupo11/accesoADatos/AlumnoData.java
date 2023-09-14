@@ -60,15 +60,9 @@ public class AlumnoData {
             ps.setDate(4, Date.valueOf(alumno.getFechaNac()));
             ps.setInt(5, alumno.getIdAlumno());
             int exito=ps.executeUpdate();
-            if(exito==1){
-                
+            if(exito==1){   
                 JOptionPane.showMessageDialog(null, "Alumno modificado");
-            }
-            
-            
-            
-            
-            
+            }            
         } catch (SQLException ex) {
             JOptionPane.showMessageDialog(null, "Error al acceder a la tabla Alumno.");
         }
