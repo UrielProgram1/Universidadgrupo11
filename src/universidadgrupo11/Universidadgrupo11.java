@@ -21,8 +21,10 @@ public class Universidadgrupo11 {
     
         //Connection con=Conexion.getConexion();
         
-        //Alumno uriel=new Alumno(7,44732237, "Gaitán", "Alejandro Uriel", LocalDate.of(2003, 2, 21), true);
-       // AlumnoData alu=new AlumnoData();
+        //CLASE ALUMNODATA
+        
+        Alumno uriel=new Alumno(11,11735750, "Cesar", "Agustin", LocalDate.of(2002, 1, 03), true);
+       AlumnoData alu=new AlumnoData();
       //alu.guardarAlumno(uriel);
       //alu.modficarAlumno(uriel);
       //alu.eliminarAlumno(7);
@@ -50,13 +52,13 @@ public class Universidadgrupo11 {
    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
    
+   //CLASE MATERIADATA
    
    
-   
-   //Materia materia=new Materia(2,"Matematica", 2, true);
-   //MateriaData mat=new MateriaData();
-   //materia.guardarMateria(matematica);
-   //materia.modificarMateria(mate);
+   Materia materia=new Materia(2,"Tecnologia", 3, true);
+   MateriaData mat=new MateriaData();
+   mat.guardarMateria(materia);
+   //mat.modificarMateria(materia);
    //mat.eliminarMateria(1);
    /*Materia materiaEncontrada= materia.buscarMateria(1);
    if(materiaEncontrada!=null){
@@ -78,14 +80,43 @@ public class Universidadgrupo11 {
       //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
    
+   
+   //CLASE INSCRIPCIONDATA
+   
    AlumnoData ad=new AlumnoData();
    MateriaData md=new MateriaData();
    InscripcionData id=new InscripcionData();
    
-   Alumno uri=ad.buscarAlumno(7);
-   Materia mate=md.buscarMateria(1);
-   Inscripcion insc=new Inscripcion(uri, mate, 10);
-   id.guardarInscripcion(insc);
+   //Guardar Alumno 
+   Alumno uri=ad.buscarAlumno(10);
+   Materia mate=md.buscarMateria(10);
+   Inscripcion insc=new Inscripcion(uri, mate, 8);
+   
+   //Guardar Inscripcion de Alumno
+  //id.guardarInscripcion(insc);
+  
+   //Actualizar la nota del Alumno
+  // id.actualizarNota(7, 1, 9);
+   
+   //Borrar Incripcion del Alumno
+   //id.borrarInscripcionMateriaAlumno(7, 1);
+   
+   //Obtener inscripciones 
+//   for(Inscripcion inscripcion:id.obtenerInscripciones()){
+//       System.out.println("ID "+inscripcion.getIdInscripcion());
+//       System.out.println("Apellido "+inscripcion.getAlumno().getApellido());
+//       System.out.println("Materia "+inscripcion.getMateria().getNombre());
+//       System.out.println("=============================");
+//       System.out.println("=============================");
+
+    /*for(Materia materia:id.obtenerAlumnosPorMateria(0)){
+        System.out.println("Nombre "+materia.getNombre());
+       
+   }
+   */
+   
+   
+   
    
     }
     
