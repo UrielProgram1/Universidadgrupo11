@@ -23,8 +23,16 @@ public class Universidadgrupo11 {
         
         //CLASE ALUMNODATA
         
-        Alumno uriel=new Alumno(11,11735750, "Cesar", "Agustin", LocalDate.of(2002, 1, 03), true);
+        //Alumno uriel=new Alumno(11,11735750, "Cesar", "Agustin", LocalDate.of(2002, 1, 03), true);
        AlumnoData alu=new AlumnoData();
+       Alumno alumnoEncontrado=alu.buscarAlumnoPorDni(72534637);
+      /* if(alumnoEncontrado!=null){
+           System.out.println("Apellido: "+alumnoEncontrado.getApellido());
+           System.out.println("Nombre: "+alumnoEncontrado.getNombre());
+           System.out.println("Fecha De Nacimiento: "+alumnoEncontrado.getFechaNac());
+          
+       }
+       */
       //alu.guardarAlumno(uriel);
       //alu.modficarAlumno(uriel);
       //alu.eliminarAlumno(7);
@@ -57,7 +65,7 @@ public class Universidadgrupo11 {
    
    Materia materia=new Materia(2,"Tecnologia", 3, true);
    MateriaData mat=new MateriaData();
-   mat.guardarMateria(materia);
+   //mat.guardarMateria(materia);
    //mat.modificarMateria(materia);
    //mat.eliminarMateria(1);
    /*Materia materiaEncontrada= materia.buscarMateria(1);
@@ -88,9 +96,9 @@ public class Universidadgrupo11 {
    InscripcionData id=new InscripcionData();
    
    //Guardar Alumno 
-   Alumno uri=ad.buscarAlumno(10);
-   Materia mate=md.buscarMateria(10);
-   Inscripcion insc=new Inscripcion(uri, mate, 8);
+   //Alumno uri=ad.buscarAlumno(10);
+   //Materia mate=md.buscarMateria(10);
+   //Inscripcion insc=new Inscripcion(uri, mate, 8);
    
    //Guardar Inscripcion de Alumno
   //id.guardarInscripcion(insc);
