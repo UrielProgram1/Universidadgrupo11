@@ -92,7 +92,7 @@ public class Menu extends javax.swing.JFrame {
         );
         escritorioLayout.setVerticalGroup(
             escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGap(0, 565, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -103,10 +103,11 @@ public class Menu extends javax.swing.JFrame {
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(escritorio, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 0, Short.MAX_VALUE)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addComponent(escritorio, javax.swing.GroupLayout.PREFERRED_SIZE, 565, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
-        Alumno1.setIcon(new javax.swing.ImageIcon("C:\\Users\\gaitan\\Desktop\\Programacion Uriel\\Agregar.png")); // NOI18N
         Alumno1.setText("Alumno");
         Alumno1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -122,14 +123,14 @@ public class Menu extends javax.swing.JFrame {
         });
         Alumno1.add(FormularioAlumnos);
 
+        jMenuBar1.add(Alumno1);
+
         Materia1.setText("Materia");
 
         jMenuItem2.setText("Formulario de Materia");
         Materia1.add(jMenuItem2);
 
-        Alumno1.add(Materia1);
-
-        jMenuBar1.add(Alumno1);
+        jMenuBar1.add(Materia1);
 
         Adm1.setText("Administracion");
 
