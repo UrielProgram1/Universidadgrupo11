@@ -88,24 +88,25 @@ public class Menu extends javax.swing.JFrame {
         escritorio.setLayout(escritorioLayout);
         escritorioLayout.setHorizontalGroup(
             escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 521, Short.MAX_VALUE)
+            .addGap(0, 700, Short.MAX_VALUE)
         );
         escritorioLayout.setVerticalGroup(
             escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 277, Short.MAX_VALUE)
+            .addGap(0, 0, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(escritorio, javax.swing.GroupLayout.DEFAULT_SIZE, 521, Short.MAX_VALUE)
+            .addComponent(escritorio, javax.swing.GroupLayout.DEFAULT_SIZE, 700, Short.MAX_VALUE)
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(escritorio, javax.swing.GroupLayout.DEFAULT_SIZE, 277, Short.MAX_VALUE)
+            .addComponent(escritorio, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 0, Short.MAX_VALUE)
         );
 
+        Alumno1.setIcon(new javax.swing.ImageIcon("C:\\Users\\gaitan\\Desktop\\Programacion Uriel\\Agregar.png")); // NOI18N
         Alumno1.setText("Alumno");
         Alumno1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -121,14 +122,14 @@ public class Menu extends javax.swing.JFrame {
         });
         Alumno1.add(FormularioAlumnos);
 
-        jMenuBar1.add(Alumno1);
-
         Materia1.setText("Materia");
 
         jMenuItem2.setText("Formulario de Materia");
         Materia1.add(jMenuItem2);
 
-        jMenuBar1.add(Materia1);
+        Alumno1.add(Materia1);
+
+        jMenuBar1.add(Alumno1);
 
         Adm1.setText("Administracion");
 
@@ -166,26 +167,24 @@ public class Menu extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void Alumno1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Alumno1ActionPerformed
+
+    }//GEN-LAST:event_Alumno1ActionPerformed
+
+    private void FormularioAlumnosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FormularioAlumnosActionPerformed
+        //GestionDeAlumnos fa= new GestionDeAlumnos();
+        FormularioDeAlumnos fa= new FormularioDeAlumnos();
+        fa.setVisible(true);
+        escritorio.add(fa);
+        escritorio.moveToFront(fa);
+
+    }//GEN-LAST:event_FormularioAlumnosActionPerformed
+
     public void FormulariodeAlumnos(){
         
     
     }
     
-    private void FormularioAlumnosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FormularioAlumnosActionPerformed
-     //GestionDeAlumnos fa= new GestionDeAlumnos();
-     FormularioDeAlumnos fa= new FormularioDeAlumnos();
-        fa.setVisible(true);
-        escritorio.add(fa);
-        escritorio.moveToFront(fa);
-     
-        
-    }//GEN-LAST:event_FormularioAlumnosActionPerformed
-
-    private void Alumno1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Alumno1ActionPerformed
-        
-        
-    }//GEN-LAST:event_Alumno1ActionPerformed
-
     
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */

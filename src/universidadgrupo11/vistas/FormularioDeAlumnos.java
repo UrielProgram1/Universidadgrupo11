@@ -164,10 +164,11 @@ public class FormularioDeAlumnos extends javax.swing.JInternalFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel3)
-                    .addComponent(documento1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(buscar1))
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(documento1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(buscar1)))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
@@ -239,10 +240,7 @@ public class FormularioDeAlumnos extends javax.swing.JInternalFrame {
         if(alumnoActual==null){
             alumnoActual=new Alumno(dni,apellido,nombre,fechanac,estado);
             aluData.guardarAlumno(alumnoActual);
-            
-            
-            
-            
+  
         }else{
             alumnoActual.setDni(dni);
             alumnoActual.setApellido(apellido);
@@ -250,10 +248,7 @@ public class FormularioDeAlumnos extends javax.swing.JInternalFrame {
             alumnoActual.setFechaNac(fechanac);
             
             aluData.modficarAlumno(alumnoActual);
-            
         }
-        
-        
         }catch(NumberFormatException ex){
             JOptionPane.showMessageDialog(this, "Debe ingresar un DNI válido.");
         }
