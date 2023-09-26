@@ -63,6 +63,12 @@ public class FormularioDeAlumnos extends javax.swing.JInternalFrame {
 
         jLabel5.setText("Nombre:");
 
+        nombre1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                nombre1ActionPerformed(evt);
+            }
+        });
+
         jLabel6.setText("Estado:");
 
         jLabel7.setText("Fecha De Nacimiento:");
@@ -267,6 +273,10 @@ public class FormularioDeAlumnos extends javax.swing.JInternalFrame {
     private void salir1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_salir1ActionPerformed
         dispose();
     }//GEN-LAST:event_salir1ActionPerformed
+
+    private void nombre1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nombre1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_nombre1ActionPerformed
 
     public void limpiarCampos(){
         documento1.setText("");

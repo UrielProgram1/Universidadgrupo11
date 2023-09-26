@@ -32,13 +32,11 @@ public class Menu extends javax.swing.JFrame {
         jFileChooser2 = new javax.swing.JFileChooser();
         jPanel1 = new javax.swing.JPanel();
         escritorio = new javax.swing.JDesktopPane();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTree1 = new javax.swing.JTree();
         jMenuBar1 = new javax.swing.JMenuBar();
         Alumno1 = new javax.swing.JMenu();
         FormularioAlumnos = new javax.swing.JMenuItem();
         Materia1 = new javax.swing.JMenu();
-        jMenuItem2 = new javax.swing.JMenuItem();
+        FormularioDeMateria = new javax.swing.JMenuItem();
         Adm1 = new javax.swing.JMenu();
         jMenuItem3 = new javax.swing.JMenuItem();
         jMenuItem4 = new javax.swing.JMenuItem();
@@ -86,25 +84,15 @@ public class Menu extends javax.swing.JFrame {
 
         escritorio.setPreferredSize(new java.awt.Dimension(600, 300));
 
-        jScrollPane1.setViewportView(jTree1);
-
-        escritorio.setLayer(jScrollPane1, javax.swing.JLayeredPane.DEFAULT_LAYER);
-
         javax.swing.GroupLayout escritorioLayout = new javax.swing.GroupLayout(escritorio);
         escritorio.setLayout(escritorioLayout);
         escritorioLayout.setHorizontalGroup(
             escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(escritorioLayout.createSequentialGroup()
-                .addGap(15, 15, 15)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(608, Short.MAX_VALUE))
+            .addGap(0, 700, Short.MAX_VALUE)
         );
         escritorioLayout.setVerticalGroup(
             escritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(escritorioLayout.createSequentialGroup()
-                .addGap(53, 53, 53)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(149, Short.MAX_VALUE))
+            .addGap(0, 565, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -139,8 +127,13 @@ public class Menu extends javax.swing.JFrame {
 
         Materia1.setText("Materia");
 
-        jMenuItem2.setText("Formulario de Materia");
-        Materia1.add(jMenuItem2);
+        FormularioDeMateria.setText("Formulario de Materia");
+        FormularioDeMateria.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                FormularioDeMateriaActionPerformed(evt);
+            }
+        });
+        Materia1.add(FormularioDeMateria);
 
         jMenuBar1.add(Materia1);
 
@@ -193,6 +186,14 @@ public class Menu extends javax.swing.JFrame {
 
     }//GEN-LAST:event_FormularioAlumnosActionPerformed
 
+    private void FormularioDeMateriaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FormularioDeMateriaActionPerformed
+        FormularioDeMaterias fm= new FormularioDeMaterias();
+        fm.setVisible(true);
+        escritorio.add(fm);
+        escritorio.moveToFront(fm);
+        
+    }//GEN-LAST:event_FormularioDeMateriaActionPerformed
+
     public void FormulariodeAlumnos(){
         
     
@@ -236,6 +237,7 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JMenu Alumno1;
     private javax.swing.JMenu Consultas1;
     private javax.swing.JMenuItem FormularioAlumnos;
+    private javax.swing.JMenuItem FormularioDeMateria;
     private javax.swing.JMenu Materia1;
     private javax.swing.JMenu Salir1;
     private javax.swing.JDesktopPane escritorio;
@@ -245,12 +247,9 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JFrame jFrame2;
     private javax.swing.JFrame jFrame3;
     private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JMenuItem jMenuItem5;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTree jTree1;
     // End of variables declaration//GEN-END:variables
 }
