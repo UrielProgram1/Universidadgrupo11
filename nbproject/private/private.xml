@@ -14,11 +14,13 @@
         <group>
             <file>file:/C:/Users/gaitan/Documents/NetBeansProjects/Universidadgrupo11/src/universidadgrupo11/accesoADatos/MateriaData.java</file>
             <file>file:/C:/Users/gaitan/Documents/NetBeansProjects/Universidadgrupo11/src/universidadgrupo11/vistas/FormularioDeAlumnos.java</file>
+            <file>file:/C:/Users/gaitan/Documents/NetBeansProjects/Universidadgrupo11/src/universidadgrupo11/entidades/Inscripcion.java</file>
             <file>file:/C:/Users/gaitan/Documents/NetBeansProjects/Universidadgrupo11/src/universidadgrupo11/Universidadgrupo11.java</file>
             <file>file:/C:/Users/gaitan/Documents/NetBeansProjects/Universidadgrupo11/src/universidadgrupo11/accesoADatos/Conexion.java</file>
             <file>file:/C:/Users/gaitan/Documents/NetBeansProjects/Universidadgrupo11/src/universidadgrupo11/accesoADatos/InscripcionData.java</file>
-            <file>file:/C:/Users/gaitan/Documents/NetBeansProjects/Universidadgrupo11/src/universidadgrupo11/vistas/Menu.java</file>
             <file>file:/C:/Users/gaitan/Documents/NetBeansProjects/Universidadgrupo11/src/universidadgrupo11/accesoADatos/AlumnoData.java</file>
+            <file>file:/C:/Users/gaitan/Documents/NetBeansProjects/Universidadgrupo11/src/universidadgrupo11/entidades/Alumno.java</file>
+            <file>file:/C:/Users/gaitan/Documents/NetBeansProjects/Universidadgrupo11/src/universidadgrupo11/entidades/Materia.java</file>
             <file>file:/C:/Users/gaitan/Documents/NetBeansProjects/Universidadgrupo11/src/universidadgrupo11/vistas/FormularioDeMaterias.java</file>
         </group>
     </open-files>

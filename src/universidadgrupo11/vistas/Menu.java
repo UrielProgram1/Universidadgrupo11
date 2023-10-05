@@ -182,7 +182,7 @@ public class Menu extends javax.swing.JFrame {
         FormularioDeAlumnos fa= new FormularioDeAlumnos();
         fa.setVisible(true);
         escritorio.add(fa);
-        escritorio.moveToFront(fa);
+  
 
     }//GEN-LAST:event_FormularioAlumnosActionPerformed
 
@@ -190,7 +190,7 @@ public class Menu extends javax.swing.JFrame {
         FormularioDeMaterias fm= new FormularioDeMaterias();
         fm.setVisible(true);
         escritorio.add(fm);
-        escritorio.moveToFront(fm);
+      
         
     }//GEN-LAST:event_FormularioDeMateriaActionPerformed
 

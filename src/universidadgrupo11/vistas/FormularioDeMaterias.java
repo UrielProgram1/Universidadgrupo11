@@ -5,9 +5,8 @@
  */
 package universidadgrupo11.vistas;
 
-import java.util.Date;
-import universidadgrupo11.accesoADatos.AlumnoData;
-import universidadgrupo11.entidades.Alumno;
+import universidadgrupo11.accesoADatos.MateriaData;
+import universidadgrupo11.entidades.Materia;
 
 /**
  *
@@ -15,8 +14,8 @@ import universidadgrupo11.entidades.Alumno;
  */
 public class FormularioDeMaterias extends javax.swing.JInternalFrame {
 
-    private AlumnoData aluData=new AlumnoData();
-    private Alumno alumnoActual=null;
+    private MateriaData mateData=new MateriaData();
+    private Materia materiaActual=null;
     
     public FormularioDeMaterias() {
         initComponents();
@@ -163,7 +162,7 @@ public class FormularioDeMaterias extends javax.swing.JInternalFrame {
 
     private void jBNuevoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBNuevoActionPerformed
         limpiarCampos();
-        alumnoActual=null;
+        materiaActual=null;
         
     }//GEN-LAST:event_jBNuevoActionPerformed
 

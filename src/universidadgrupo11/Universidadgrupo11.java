@@ -23,7 +23,7 @@ public class Universidadgrupo11 {
         
         //CLASE ALUMNODATA
         
-        Alumno uriel=new Alumno(12,11735750, "Cesar", "Agustin Espinoza", LocalDate.of(2002, 4, 06), true);
+        Alumno alumno=new Alumno(12,11735750, "Cesar", "Agustin Espinoza", LocalDate.of(2002, 4, 06), true);
        AlumnoData alu=new AlumnoData();
        //Alumno alumnoEncontrado=alu.buscarAlumnoPorDni(72534637);
       /* if(alumnoEncontrado!=null){
@@ -32,9 +32,10 @@ public class Universidadgrupo11 {
            System.out.println("Fecha De Nacimiento: "+alumnoEncontrado.getFechaNac());
           
        }
+       
        */
-      //alu.guardarAlumno(uriel);
-      alu.modficarAlumno(uriel);
+      //alu.guardarAlumno(alumno);
+      //alu.modficarAlumno(alumno);
       //alu.eliminarAlumno(7);
  /* Alumno alumnoEncontrado =alu.buscarAlumno(4);  
       if(alumnoEncontrado!=null){
